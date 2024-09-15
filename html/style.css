@@ -1,0 +1,100 @@
+
+body{
+    font-family: 'Century Gothic', Calibri, serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+header{
+    height: 100px;
+    height: 50px;
+    background: -webkit-linear-gradient(left, rgb(33, 45, 155), rgb(132, 3, 158), yellow );
+    background: -o-linear-gradient(right, rgb(33, 45, 155), rgb(132, 3, 158), yellow );
+    background: -moz-linear-gradient(right, rgb(33, 45, 155), rgb(132, 3, 158), yellow );
+    background: linear-gradient(to right, rgb(33, 45, 155), rgb(132, 3, 158), yellow);
+    opacity: 0.9;
+
+}
+
+
+nav{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    background: -webkit-linear-gradient(left, rgb(33, 45, 155), rgb(132, 3, 158), yellow );
+    background: -o-linear-gradient(right, rgb(33, 45, 155), rgb(132, 3, 158), yellow );
+    background: -moz-linear-gradient(right, rgb(33, 45, 155), rgb(132, 3, 158), yellow );
+    background: linear-gradient(to right, rgb(33, 45, 155), rgb(132, 3, 158), yellow);
+    opacity: 0.9;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    list-style-type: none;
+    float: left;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 35px;
+    color: rgb(255, 255, 255);      /*bouton*/
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.table{
+    display: table;     /*centrage bouton*/
+    margin: 0 auto;
+    
+}
+
+.transparent-image {
+    opacity: 0.5; 
+    width: 100vw;
+    object-fit: cover ;
+
+}
+
+body{
+    background-color: black;
+}
+
+.menu-ind:hover{
+    border-bottom: 5px solid rgb(0, 0, 0);
+    background-color:rgb(0, 0, 0, 0.10) ;
+}
+.menu-inf:hover{
+    border-bottom: 5px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.10);
+}
+.menu-vil:hover{
+    border-bottom: 5px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.10);
+}
+.menu-epr:hover{
+    border-bottom: 5px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.10);
+}
+.menu-p4:hover{
+    border-bottom: 5px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.10);
+}
+.menu-p5:hover{
+    border-bottom: 5px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.10);
+}
+.menu-con:hover{
+    border-bottom: 5px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.10);
+}
+nav li:hover a{
+    padding: 5px 35px 10px 35px;
+}
