@@ -6,12 +6,21 @@
 		<title>TEST</title>
 		<link rel="stylesheet" href="../css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		
+		<style>	
+			header {
+				position: fixed;
+				z-index: 1000;
+				
+			}
+		</style>
 	</head>
+	
 	<body>	
-		<header>
-			<h1 class="centered-title">Les JO 2028</h1>
-		</header>
-		<nav>
+		<header>	
+
+			<!-- <img src="../images/Logo.png" class="logo">-->
+
 			<div class="table">
 				<ul>
 					<li class="bouton-top">
@@ -37,11 +46,37 @@
 					</li>
 				</ul>
 			</div>
-		</nav>
-		
-		<footer>
-			<img src="../images/fondJO.png" class="transparent-image">
-		</footer>
+		</header>
+
+		<main>
+			
+			<img src="../images/fond.png" class="transparent-image">
+			
+			<p class="TextLeftTop">
+				Lors des 
+				<br>Jeux Olympiques 
+				<br>de 2024, la France 
+				<br> a brillamment 
+				<br>mis à l’honneur son 
+				<br>patrimoine historique 
+				<br>en réutilisant plusieurs 
+				<br>lieux emblématiques. 
+			</p>
+			
+			<p class="TextRightTop">
+				Parmi ces lieux 
+				<br>prestigieux, 
+				<br>le Château de Versailles 
+				<br>s’est imposé comme 
+				<br>une scène grandiose, 
+				<br>où l’histoire et 
+				<br>l’excellence sportive 
+				<br>se sont 
+				<br>harmonieusement 
+				<br>rencontrées.
+
+			</p>
+		</main>
 
 
 		
@@ -59,6 +94,27 @@
 			<p>D<br><br><br><br>e<br><br><br><br>s<br><br><br><br></p>
 			<p class="p2">BLABLABLABLA</p>
 		</div>
+		
+		<footer>
+			<h1>Des Questions ?</h1>
+			<form method="post" action="traitement.php">
+				<fieldset id="Question1">
+					<legend>Entrez votre email</legend>
+					<input type="text" id="email" name="email"> <br>
+				</fieldset>
+				<fieldset id="Question2">
+					<legend>Entrez votre question ?</legend>
+					<textarea id="prez" name="presentation"></textarea> <br>
+				</fieldset>
+
+				<input type="submit" value="Envoyer">
+			</form>
+		</footer>
+	
+	
+	
+	
+	
 	</body>
 </html>
 
