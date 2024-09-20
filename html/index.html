@@ -19,7 +19,35 @@
 	<body>	
 		<header>	
 
-			<!-- <img src="../images/Logo.png" class="logo">-->
+			<div class="top">
+
+				<ul>
+
+					<img src="../images/Logo.png" class="logo">
+
+					<li class="btop">
+						<a href="index.html">Accueil</a>
+					</li>
+					<li class="btop">
+						<a href="infrastructures.html">Infrastructures</a>
+					</li>
+					<li class="btop">
+						<a href="epreuves.html">Epreuves</a>
+					</li>
+					<li class="btop">
+						<a href="village.html">Village Olympique</a>
+					</li>
+					<li class="btop">
+						<a href="page4.html">Coming soon</a>
+					</li>
+					<li class="btop">
+						<a href="page5.html">Coming soon</a>
+					</li>
+					<li class="btop">
+						<a href="contact.html">Contactez-nous !</a>
+					</li>
+				</ul>
+			</div>
 
 			<div class="table">
 				<ul>
@@ -46,7 +74,19 @@
 					</li>
 				</ul>
 			</div>
+			
+			<img src="../images/menu.png" alt="menu" class="menu">
+
+			<script>
+				const menu = document.querySelector(".menu")
+				const table = document.querySelector(".table")
+				menu.addEventListener('click',()=>{
+				table.classList.toggle('menuR')
+				})
+			</script>
+
 		</header>
+
 
 		<main>
 			

@@ -15,8 +15,8 @@ h1 {
 
 header {
     width: 100%;
-    background-color: rgba(35, 38, 128, 0.6);
-    filter:blur(px)
+    background-color: rgba(102, 51, 153, 0.7);
+    border-radius: 100px;
 }
 
 
@@ -51,7 +51,7 @@ header a {
     width: 100%;
     object-fit: cover ;
     filter:brightness(30%) blur(6px);
-    z-index: 0;
+    z-index: -1;
     position: relative;
 }
 
@@ -60,7 +60,7 @@ header a {
     left: 10.5%;
     top: 42%;
     transform: translate(-30%,-50%);
-    z-index: 2;
+    z-index: 0;
     font-size: 50px;
 }
 
@@ -73,25 +73,43 @@ header a {
 
 .TextRightTop {
     position: absolute;
-    right:-7%;
+    right:-5%;
     top: 45%;
     transform: translate(-30%,-50%);
-    z-index: 2;
+    z-index: 0;
     font-size: 50px;
 
 }
 
 .logo {
-    width: 1%;
+    width: 52px;
+    position: absolute;
+    left: 50px
 }
 
 body {
     background-color: rgb(0, 0, 0);
 }
 
+.btop:hover {
+    border-top: 5px solid rgb(255, 255, 255);
+    background-color:rgba(179, 179, 179, 0.3) ;
+    
+}
+
+.btop {
+    display: table;     /*centrage bouton*/
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    left: 10%;
+}
+
+
 .bouton-top:hover {
     border-top: 5px solid rgb(255, 255, 255);
     background-color:rgba(179, 179, 179, 0.3) ;
+    border-radius: 10px;
 }
 
 header li:hover a {
@@ -110,7 +128,55 @@ header li:hover a {
     header li:hover a{
         padding: 5px 10px 10px 10px;
     }
+    .menu {
+        display: block;
+    }
 }
+
+
+.menu {
+
+    position: absolute;
+    top: -8px;
+    right: 50px;
+    width: 70px;
+    z-index: 3;
+}
+
+.table {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(102, 51, 153, 0.6);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    margin-left: -100%;
+    transition:all 0.5s;
+}
+
+.table ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.table ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+    z-index: 3;
+}
+
+.table.menuR {
+    margin-left: 0;
+    z-index: 3;
+}
+
 
 footer{
     font-size: 16px;
@@ -222,11 +288,11 @@ input[types="submit"]:hover{
       color: #ffffff;
   }
   
-@property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
+    @property --angle{
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
 
   .venue::after{
     content: '';
@@ -241,7 +307,7 @@ input[types="submit"]:hover{
     z-index: -1;
     padding: 246px;
     border-radius: 10px;
-    animation: 10s spin linear infinite;
+    animation: 5s spin linear infinite;
   }
 
   .venue::before{
