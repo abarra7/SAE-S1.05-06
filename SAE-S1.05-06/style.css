@@ -1,14 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/la28-text');
 
-/*@keyframes changeLetter {
-    0% {
-        content: "A";
-    }
-    100% {
-        content: "B";
-    }
-}*/
-
 html {
     scroll-behavior: smooth;
     font-family: "LA28 Text";
@@ -19,9 +10,20 @@ body {
     color: white;
     /*align-items: center;*/
     /*justify-content: center;*/
-    /*overflow: hidden;*/
+    overflow-x: hidden;
     margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 nav {
     position: fixed;
@@ -37,9 +39,17 @@ nav {
 #logo {
     height: 11rem;
     position: absolute;
-    top: 0;
+    top: 1rem;
     left: 0;
     filter: brightness(0) invert(1);
+    z-index: 2;
+    transition: all 0.1s;
+}
+#logo:hover {
+    height: 12rem;
+    top: 0.5rem;
+    left: -0.5rem;
+    filter: brightness(1) invert(1);
     z-index: 2;
 }
 
@@ -74,6 +84,17 @@ nav {
     box-shadow: 0 0 15px rgba(128, 160, 197, 1);
 }
 
+
+
+
+
+
+
+
+
+
+
+
 #slider {
     width: 100vw;
     height: 100vh;
@@ -81,14 +102,14 @@ nav {
     position: relative;
 }
 
-.images {
+.slider-images {
     display: flex;
     width: calc(100vw * 4);
     height: 100vh;
     animation: slide 15s infinite; 
 }
 
-.images img {
+.slider-images img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -113,7 +134,7 @@ nav {
     animation: slide 2s infinite;
 }
 
-.slider-text {
+.slider p {
     position: absolute;
     top: 7%;
     left: 30%;
@@ -124,35 +145,13 @@ nav {
 }
 
 
-.hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
-    height: 50rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
 
-.hero h1 {
-    font-size: 7rem;
-    position: relative;
-    color: #45576b;
-    -webkit-text-stroke: 0.5rem rgb(27, 29, 46);
-    text-transform: uppercase;
-    margin: 0;
-}
 
-.hero h1::before {
-    content: attr(data-text);
-    position: absolute;
-    height: 100%;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke: 0vw rgb(23, 24, 43);
-    border-right: 2px solid rgb(255, 255, 255);
-    overflow: hidden;
-    animation: textAnimation 5s linear infinite;
-}
+
+
+
+
+
 
 @keyframes textAnimation {
     0%,10%,100%
@@ -164,170 +163,107 @@ nav {
         width: 100%;
     }
 }
-
-.hero p {
+.gros-titre {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.gros-titre p {
     font-size: 2rem;
 }
-
-.description-bis {
-    padding: 50px 20px;
-    background-color: #8fa9c5;
+.gros-titre h1 {
+    font-size: 7rem;
+    position: relative;
+    color: #45576b;
+    -webkit-text-stroke: 0.5rem rgb(27, 29, 46);
+    text-transform: uppercase;
+    margin: 0;
+}
+.gros-titre h1::before {
+    content: attr(data-text);
+    position: absolute;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0vw rgb(23, 24, 43);
+    border-right: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+    animation: textAnimation 5s linear infinite;
 }
 
-.description-bis div {
+
+
+
+
+
+
+
+
+.description {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.description div {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 5rem;
 }
-
-.description-bis h2 {
-    font-size: 2rem;
-    color: #333;
+.description h2 {
     text-align: center;
+    font-size: 3rem;
+    color: #d4d4d4;
+    text-decoration: underline;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+.description p:not(#infra-partie1 p) {
+    font-size: 2rem;
+    color: #d8d8d8;
+    margin-left: 25rem;
+    margin-right: 25rem;
 }
 
-.description-bis-img {
+
+
+
+
+
+
+
+#infra-partie1 {
+    background-color: #8fa9c5;
+}
+#infra-partie1 h2 {
+    font-size: 2rem;
+    color: #333;
+}
+#infra-partie1 img {
     border-radius: 10px;
     width: 50rem;
-    height: 25rem;
+    height: 30rem;
     margin-right: 15px;
     object-fit: cover;
     float: left;
 }
-
-.description-bis div p {
+#infra-partie1 p {
     font-size: 1.5rem;
     display: inline;
     color: #333;
 }
 
-.description h2 {
-    font-size: 3rem;
-    color: #d4d4d4;
+#infra-partie3 {
+    background-color: #222c38be;
 }
-.description p {
-    font-size: 2rem;
-    color: #d8d8d8;
-}
-#titre-partie2 {
+#infra-partie3 h1 {
     font-size: 4rem;
     color: #d4d4d4;
     text-align: center;
-    margin-top: 200px;
-}
-
-.VO1 {
-    background-color: #4f4d70;
-
-}
-.VOT1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 17%;
-    top: 110%;
-    max-width: 1200px;
-}
-.VOT2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 13%;
-    top: 125%;
-    max-width: 1400px;
-}
-.VOT3 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 17%;
-    top: 155%;
-    max-width: 1200px;
-}
-.VOT4 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 13%;
-    top: 165%;
-    max-width: 1400px;
-}
-.VOT5 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 17%;
-    top: 210%;
-    max-width: 1200px;
-}
-.VOT6 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 13%;
-    top: 220%;
-    max-width: 1400px;
-}
-.VOT7 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 17%;
-    top: 270%;
-    max-width: 1200px;
-}
-.VOT8 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 13%;
-    top: 280%;
-    max-width: 1400px;
-}
-
-.textA1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 17%;
-    top: 130%;
-    max-width: 1200px;
-}
-.textA0 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 30%;
-    top: 110%;
-    max-width: 1200px;
-}
-.textA2 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 24%;
-    top: 180%;
-    max-width: 1200px;
-}
-.textA3 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #d8d8d8;
-    position: absolute;
-    left: 17%;
-    top: 200%;
-    max-width: 1200px;
+    margin-top: 50px;
+    padding-top: 50px;
+    text-decoration:overline underline;
 }
 
 
@@ -340,6 +276,13 @@ nav {
 
 
 
+
+#epreuves-transport-gros-titre {
+    background-color: #43584a;
+}
+#epreuves-transport-partie1 {
+    background-color: #639f77;
+}
 
 
 
