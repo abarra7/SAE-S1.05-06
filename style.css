@@ -241,10 +241,27 @@ nav {
     margin-left: 15rem;
     margin-right: 15rem;
 }
+.description img {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 30rem;
+    width: 100%;
+}
 .description p:not(#infra-partie1 p) {
     font-size: 2rem;
     margin-left: 25rem;
     margin-right: 25rem;
+}
+.bonus {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    margin-top: 5rem;
 }
 
 
@@ -264,7 +281,7 @@ nav {
 #infra-partie1 img {
     border-radius: 10px;
     width: 50rem;
-    height: 40rem;
+    height: 45rem;
     margin-right: 15px;
     margin-left: 7rem;
     object-fit: cover;
@@ -310,7 +327,12 @@ nav {
 #epreuves-transport-partie2 {
     background-color: #b99b39;
 }
-
+#epreuves-transport-partie3 {
+    background-color: #977d26;
+}
+#epreuves-transport-partie3 h2, #epreuves-transport-partie3 p {
+    color: white;
+}
 
 
 #vill-olymp-partie1 {
