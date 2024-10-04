@@ -6,7 +6,6 @@ html {
 }
 
 body {
-    background-color: #45576b;
     color: white;
     /*align-items: center;*/
     /*justify-content: center;*/
@@ -29,7 +28,6 @@ nav {
     position: fixed;
     text-align: right;
     /*top: 0;*/
-    background-color: #45576b;
     width: 100%;
     z-index: 1;
     padding: 20px 0;
@@ -43,14 +41,24 @@ nav {
     left: 0;
     filter: brightness(0) invert(1);
     z-index: 2;
-    transition: all 0.1s;
+    transition: all 0.1s,
+        filter 0s;
 }
 #logo:hover {
     height: 12rem;
     top: 0.5rem;
     left: -0.5rem;
-    filter: brightness(1) invert(1);
+    filter: brightness(1);
     z-index: 2;
+}
+
+#fleche-accueil {
+    height: 5rem;
+    position: absolute;
+    top: -1rem;
+    left: 8.25rem;
+    z-index: 1;
+    filter: invert(1);
 }
 
 .navbutton {
@@ -74,19 +82,22 @@ nav {
 }
 .navbutton:hover {
     background-color: white;
-    color: #45576b;
+    color: black;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-.navbutton:active {
-    background-color: #80a0c5;
-    color: #45576b;
-    border-color: #80a0c5;
-    box-shadow: 0 0 15px rgba(128, 160, 197, 1);
+
+#index-nav {
+    background-color: #252525;
 }
-
-
-
-
+#infra-nav {
+    background-color: #45576b;
+}
+#epreuves-nav {
+    background-color: #b99b39;
+}
+#vill-olymp-nav {
+    background-color: #43584a;
+}
 
 
 
@@ -178,8 +189,6 @@ nav {
 .gros-titre h1 {
     font-size: 7rem;
     position: relative;
-    color: #45576b;
-    -webkit-text-stroke: 0.5rem rgb(27, 29, 46);
     text-transform: uppercase;
     margin: 0;
 }
@@ -193,8 +202,20 @@ nav {
     overflow: hidden;
     animation: textAnimation 5s linear infinite;
 }
-
-
+#infra-gros-titre {
+    background-color: #45576b;
+}
+#infra-gros-titre h1 {
+    color: #45576b;
+    -webkit-text-stroke: 0.5rem rgb(27, 29, 46);
+}
+#epreuves-transport-gros-titre {
+    background-color: #b99b39;
+}
+#epreuves-transport-gros-titre h1 {
+    color: #b99b39;
+    -webkit-text-stroke: 0.5rem rgb(73, 58, 36);
+}
 
 
 
@@ -229,9 +250,9 @@ nav {
 
 
 
-
-
-
+#acceuil {
+    background-color: #505050;
+}
 
 #infra-partie1 {
     background-color: #8fa9c5;
@@ -253,7 +274,9 @@ nav {
     display: inline;
     color: #333;
 }
-
+#infra-partie2 {
+    background-color: #45576b;
+}
 #infra-partie3 {
     background-color: #222c38be;
 }
@@ -261,12 +284,14 @@ nav {
     font-size: 4rem;
     color: #d4d4d4;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0;
     padding-top: 50px;
     text-decoration:overline underline;
 }
 
-
+#epreuves-transport-partie1 p {
+    color: #333;
+}
 
 
 
@@ -278,10 +303,10 @@ nav {
 
 
 #epreuves-transport-gros-titre {
-    background-color: #43584a;
+    background-color: #b99b39;
 }
 #epreuves-transport-partie1 {
-    background-color: #639f77;
+    background-color: #eebf24;
 }
 
 
