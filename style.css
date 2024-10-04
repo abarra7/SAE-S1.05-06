@@ -6,17 +6,12 @@ html {
 }
 
 body {
-    color: white;
     /*align-items: center;*/
     /*justify-content: center;*/
     overflow-x: hidden;
     margin: 0;
+    background-color: #333;
 }
-
-
-
-
-
 
 
 
@@ -144,7 +139,6 @@ nav {
 .slider-container {
     animation: slide 2s infinite;
 }
-
 .slider p {
     position: absolute;
     top: 7%;
@@ -175,7 +169,6 @@ nav {
     }
 }
 .gros-titre {
-    background: url('images/hero.jpg') no-repeat center center/cover;
     height: 50rem;
     display: flex;
     align-items: center;
@@ -196,9 +189,9 @@ nav {
     content: attr(data-text);
     position: absolute;
     height: 100%;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke: 0vw rgb(23, 24, 43);
-    border-right: 2px solid rgb(255, 255, 255);
+    color: white;
+    -webkit-text-stroke: 100%;
+    border-right: 2px solid white;
     overflow: hidden;
     animation: textAnimation 5s linear infinite;
 }
@@ -207,14 +200,21 @@ nav {
 }
 #infra-gros-titre h1 {
     color: #45576b;
-    -webkit-text-stroke: 0.5rem rgb(27, 29, 46);
+    -webkit-text-stroke: 0.25rem rgb(27, 29, 46);
 }
 #epreuves-transport-gros-titre {
     background-color: #b99b39;
 }
 #epreuves-transport-gros-titre h1 {
     color: #b99b39;
-    -webkit-text-stroke: 0.5rem rgb(73, 58, 36);
+    -webkit-text-stroke: 0.25rem rgb(73, 58, 36);
+}
+#vill-olymp-gros-titre {
+    background-color: #43584a;
+}
+#vill-olymp-gros-titre h1 {
+    color: #43584a;
+    -webkit-text-stroke: 0.25rem rgb(20, 48, 27);
 }
 
 
@@ -226,6 +226,8 @@ nav {
 .description {
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .description div {
     display: inline-block;
@@ -235,22 +237,20 @@ nav {
 .description h2 {
     text-align: center;
     font-size: 3rem;
-    color: #d4d4d4;
     text-decoration: underline;
     margin-left: 15rem;
     margin-right: 15rem;
 }
 .description p:not(#infra-partie1 p) {
     font-size: 2rem;
-    color: #d8d8d8;
     margin-left: 25rem;
     margin-right: 25rem;
 }
 
 
 
-
 #acceuil {
+    color: white;
     background-color: #505050;
 }
 
@@ -258,47 +258,40 @@ nav {
     background-color: #8fa9c5;
 }
 #infra-partie1 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #333;
 }
 #infra-partie1 img {
     border-radius: 10px;
     width: 50rem;
-    height: 30rem;
+    height: 40rem;
     margin-right: 15px;
+    margin-left: 7rem;
     object-fit: cover;
     float: left;
 }
 #infra-partie1 p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: inline;
     color: #333;
 }
+.side-text {
+    width: 50rem;
+}
 #infra-partie2 {
     background-color: #45576b;
+    color: white;
 }
 #infra-partie3 {
     background-color: #222c38be;
+    color: white;
 }
 #infra-partie3 h1 {
     font-size: 4rem;
-    color: #d4d4d4;
     text-align: center;
     margin-top: 0;
-    padding-top: 50px;
     text-decoration:overline underline;
 }
-
-#epreuves-transport-partie1 p {
-    color: #333;
-}
-
-
-
-
-
-
-
 
 
 
@@ -308,64 +301,37 @@ nav {
 #epreuves-transport-partie1 {
     background-color: #eebf24;
 }
-
-
-
-
-
-
-
-
-.contact {
-    padding: 50px 20px;
-    background-color: white;
-    text-align: center;
+#epreuves-transport-partie1 h2, #epreuves-transport-partie1 p {
+    color: #333;
 }
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.contact p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-    gap: 15px;
-}
-
-.contact input, .contact textarea {
-    padding: 15px;
-    font-size: 1rem;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact button {
-    padding: 15px;
-    background-color: #333;
+#epreuves-transport-partie2 h2, #epreuves-transport-partie2 p {
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
-
-.contact button:hover {
-    background-color: #555;
+#epreuves-transport-partie2 {
+    background-color: #b99b39;
 }
 
 
-footer {
-    background-color: #333;
+td {
+    width: 50rem;
+    vertical-align: top;
+}
+footer p {
+    font-size: 1.5rem;
     color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 50px;
+}
+footer a {
+    color: rgb(64, 159, 232);
+}
+#footer1 p {
+    margin-left: 1rem;
+    margin-right: 10rem;
+}
+#footer2 p {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+#footer3 p {
+    margin-left: 5rem;
+    margin-right: 1rem;
 }
