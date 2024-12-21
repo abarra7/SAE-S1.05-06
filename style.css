@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     background-color: #333;
+    text-indent: 3vw;
 }
 
 
@@ -93,7 +94,21 @@ nav {
 #vill-olymp-nav {
     background-color: #43584a;
 }
-
+#transport-futur-nav {
+    background-color: rgb(56, 0, 0);
+}
+#modernisation-infrastructures-nav {
+    background-color: rgb(42, 0, 141);
+}
+#analyse-nav {
+    background-color: rgb(221, 118, 0);
+}
+#defis-nav {
+    background-color: rgb(5, 28, 70);
+}
+#reportage-nav {
+    background-color: rgb(105, 3, 114);
+}
 
 
 
@@ -133,7 +148,7 @@ nav {
 
     75% { transform: translateX(-300vw); }
     85% { transform: translateX(-300vw); }
-    
+
     100% { transform: translateX(0); }
 }
 .slider-container {
@@ -175,6 +190,7 @@ nav {
     justify-content: center;
     color: white;
     text-align: center;
+    text-indent: 0;
 }
 .gros-titre p {
     font-size: 2rem;
@@ -216,6 +232,43 @@ nav {
     color: #43584a;
     -webkit-text-stroke: 0.25rem rgb(20, 48, 27);
 }
+#transport-futur-gros-titre h1 {
+    color: rgb(56, 33, 33);
+}
+#transport-futur-gros-titre {
+    background-color: rgb(56, 33, 33);
+    -webkit-text-stroke: 0.25rem rgb(32, 0, 0);
+}
+#modernisation-infrastructures-gros-titre {
+    background-color: rgb(33, 26, 83);
+    -webkit-text-stroke: 0.25rem rgb(6, 0, 29);
+}
+#modernisation-infrastructures-gros-titre h1 {
+    color: rgb(33, 26, 83);
+}
+#analyse-gros-titre {
+    background-color: rgba(221, 118, 0, 0.753);
+    -webkit-text-stroke: 0.25rem rgb(51, 19, 0);
+}
+#analyse-gros-titre h1 {
+    color: rgba(221, 118, 0, 0.753);
+}
+#defis-gros-titre h1 {
+    color: rgb(5, 28, 70);
+}
+#defis-gros-titre {
+    background-color: rgb(5, 28, 70);
+    -webkit-text-stroke: 0.25rem rgb(0, 1, 32);
+}
+
+#reportage-gros-titre {
+    background-color: rgb(105, 3, 114);
+    -webkit-text-stroke: 0.25rem rgb(32, 0, 32);
+}
+#reportage-gros-titre {
+    color: rgb(105, 3, 114);
+}
+
 
 
 
@@ -246,6 +299,8 @@ nav {
     border-radius: 10px;
     height: 30rem;
     width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .description p:not(#infra-partie1 p) {
     font-size: 2rem;
@@ -263,6 +318,25 @@ nav {
     margin-bottom: 0;
     margin-top: 5rem;
 }
+
+
+
+
+
+.mini-titre h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+
+
+
+
+
+
 
 
 
@@ -312,6 +386,7 @@ nav {
 
 
 
+
 #epreuves-transport-gros-titre {
     background-color: #b99b39;
 }
@@ -339,6 +414,34 @@ nav {
     background-color: #649273;
     color: #333;
 }
+
+#transport-futur-partie1 {
+    background-color: rgba(110, 10, 10, 0.719);
+    color: #c7c7c7;
+}
+
+#modernisation-infrastructures-partie1 {
+    background-color: rgb(49, 35, 145);
+    color: #c7c7c7;
+}
+
+#analyse-partie1 {
+    background-color: rgb(182, 73, 0);
+    color: #FFFFFF;
+}
+
+#defis-partie1 {
+    background-color: rgba(13, 42, 121, 0.63);
+    color: #c7c7c7;
+}
+
+#reportage-partie1 {
+    background-color: rgb(78, 18, 83);
+    color: #c7c7c7;
+}
+
+
+
 
 
 td {
