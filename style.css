@@ -109,6 +109,9 @@ nav {
 #reportage-nav {
     background-color: rgb(105, 3, 114);
 }
+#annexe-nav {
+    background-color: #252525;
+}
 
 
 
@@ -268,7 +271,13 @@ nav {
 #reportage-gros-titre {
     color: rgb(105, 3, 114);
 }
-
+#annexe-gros-titre {
+    color: #252525;
+}
+#annexe-gros-titre {
+    background-color: #252525;
+    -webkit-text-stroke: 0.25rem rgb(0, 0, 0);
+}
 
 
 
@@ -437,6 +446,10 @@ nav {
 
 #reportage-partie1 {
     background-color: rgb(78, 18, 83);
+    color: #c7c7c7;
+}
+#annexe-partie1 {
+    background-color: rgb(27, 26, 27);
     color: #c7c7c7;
 }
 
